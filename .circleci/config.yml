@@ -24,10 +24,10 @@ jobs:
           command: unzip packer_1.5.4_linux_amd64.zip       
       - run:
           name: Validate Packer Template
-          command: ./packer validate ubuntu-ami.json
+          command: ./packer validate ami.json
       - run:
           name: Build AMI
-          command: ./packer build ubuntu-ami.json
+          command: ./packer build ami.json
 workflows:
   version: 2
   build-ami:
