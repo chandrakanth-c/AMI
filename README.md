@@ -1,10 +1,10 @@
-#Packer to build customized AMI using Packer
+# Packer to build customized AMI using Packer
 Follow below steps in order to use the packer template application.
 
-#Validate template
+# Validate template
 packer validate -var-file=./cred.json ami.json
 
-#Build the Packer Template
+# Build the Packer Template
 packer build -var-file=./cred.json ami.json
 
 Running an instance of the AMI image
